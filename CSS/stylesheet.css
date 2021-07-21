@@ -34,71 +34,24 @@ p {
     font-size: 20px;
     font-family: 'Hind Madurai',sans-serif;
 }
-.inline-block {
-    grid-area:link;
-    vertical-align: top;
-}
 
-.inline-block ul {
-    display:flex;
-}
 
 .logo img {
-    width:60%;
+    width:100%;
     padding:10px 0px 0px 40px;
-    grid-area:logo;
   
 }
 
-.navigation {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "logo nothing link";
+.navBar{
     background-color: #F3EAE3;
 }
 
-.inline-block ul {
-    list-style-type: none;
-    border:0;
-    padding-top:2% ;
-}
-
-.inline-block li{
-    text-decoration: none;
-    font-size: 17px;
-    list-style:none;
-
-}
-
-.inline-block li a {
-    display:block;
-    color:black;
-    padding:16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Hind Madurai', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-ul .contact {
-    background-color: #D1A6A6;
-    border-style: solid;
-    border-color:#546A7B;
-    border-radius: 7px;
-    border-width: 3px;
-    font-family: 'Hind Madurai',sans-serif;
-    font-weight:600;
-    font-size: 25px; 
-    padding:0px 7px 0px 7px; 
-}
 /*NEED HELP REACHING THIS CONTACT*/
 
 
-.header-color {
+.jumbotron {
     background-color:#F3EAE3;
     border:none; 
-    overflow:hidden;
 }
 
 .pfp {
@@ -107,17 +60,18 @@ ul .contact {
     grid-area: pfp;
 
 }
-.header{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "hero-left pfp";
-}
+
 .hero-left{ 
     height:20px;
     padding:25px;
-    grid-area:hero-left;
 }
+
+.section{
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:40px;
+}
+
 
 .hero-left h1{ 
     padding-left:85px;
@@ -127,32 +81,6 @@ ul .contact {
     padding-top: 150px;
     padding-left:120px;
     position: absolute;
-
-  /* background-image: url("images/arrow.png"); */
-  
-}
-
-/* .bounce {
-  animation: rotate 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-} */
-
-
-#about-me {
-    padding:70px 160px 50px 160px;
-    align-items: center;
-    
 }
 .white {
     background-color: white;
@@ -184,425 +112,14 @@ ul .contact {
     font-family:'Hind Madurai', sans-serif;
     font-size: 20px;
 }
-/*RESUME BUTTON*/
-.resume  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:60px 0px 80px 0px;
+footer img{
+width:7%;
+padding-bottom: 80px;
+margin:10px;
 }
 
-.resume button{
-    
-    background-color: #D1A6A6;
-    border-color:#546A7B;
-    border-radius: 7px;
-    border-width: 3px;
-    font-family: 'Hind Madurai',sans-serif;
-    font-weight:600;
-    font-size: 25px; 
-    padding:10px 1px 10px 1px; 
-}
-
-.resume img {
-    width:15%;
-    margin-left:10px;
-    margin-top:3px;
-
-}
-/*RESUME BUTTON*/
-
-.myWork{
-    background-color:#E9EDF1;
-    padding-bottom:140px;
-    padding-top:40px;
-}
-
-.myWork h2 {
-    text-align: center;
-}
-
-.myWork button {
-    border:none;
-    font-family: 'Hind Madurai',sans-serif;
-    font-weight:600;
-    font-size: 25px;
-    text-transform: uppercase;
-    background-color:  #F3EAE3;
-}
-.wrapper {
-    display:grid;
-    grid-template-rows: 500px 500px 500px;
-    grid-template-areas: "p1"
-    "p2"
-    "p3";
-
-}
-.projectOne {
-    grid-area:p1;
-    display: flex;
-    border-style:solid;
-    border-color:#546A7B;
-    background-color: #F3EAE3;
-    margin:40px 60px 50px 60px;
-}
-
-.projectOne h3, .projectOne p, .projectOne button, .projectTwo h3,.projectTwo p, .projectTwo button, .projectThree h3, .projectThree p, .projectThree button{
-padding-left:45px;
-}
-
-.projectOne h3, .projectThree h3{
-padding-top:80px;
-}
-
-.projectTwo h3 {
-    padding-top:100px;
-}
-.projectTwo {
-    grid-area:p2;
-    display: flex;
-    border-style:solid;
-    border-color:#546A7B;
-    background-color: #F3EAE3;
-    margin:10px 50px 50px 50px;
-}
-
-.projectThree {
-        grid-area:p3;
-        display: flex;
-        border-style:solid;
-        border-color:#546A7B;
-        background-color: #F3EAE3;
-        margin:10px 50px 50px 50px;
-    
-}
-.footer {
-    background-color: #FFFFFF;
-    text-align:center;
-    padding:100px 60px 10px 60px;
-
-}
-
-.footer-logo img {
+.footer-icon{
     width:20%;
     padding-bottom: 80px;
     margin:10px;
-}
-
-.footer-text {
-    color:#0D1F2D;
-}
-
-
-#SMicons img {
-   width:5%; 
-}
-.pfp2 {
-    display:none;
-}
-
-/* .pfp1{
-    width:90%;
-}  */
-
-
-.logo2 {
-    display:none;
-}
-
-.copyright{
-margin-top:100px;
-
-}
-
-/*MEDIA QUERYYYYYYY*//*MEDIA QUERYYYYYYY*//*MEDIA QUERYYYYYYY*//*MEDIA QUERYYYYYYY*//*MEDIA QUERYYYYYYY*//*MEDIA QUERYYYYYYY*/
-
-@media only screen and (max-width: 600px) {
-
-    .pfp1 {
-        display:none;
     }
-
-    .logo1{
-        display:none;
-    }
-
-    .logo2{
-        display:inline-block;
-        position:relative;
-        text-align: center;
-    }
-    .gradient {
-        background-image:none;
-        padding-left:0;
-        padding-right:0;
-    }
-  
-    /* TEXT */
-    h1 {
-        font-family:'Arimo',sans-serif;
-        font-size:3.5em;
-    }
-    
-    h2 {
-    font-family:'Arimo',sans-serif;
-    font-size:30px;
-    }
-    
-    h3 {
-        font-family:'Cormorant Infant',serif;
-        font-size: 25px;
-    }
-    p {
-        font-size: 20px;
-        font-family: 'Hind Madurai',sans-serif;
-    }
-    .navigation {
-        display:grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: ". logo ." 
-        ". link .";
-        background-color: #F3EAE3;
-    }
-
-    .inline-block {
-        grid-area:link;
-    }
-    
-  
-    .inline-block ul {
-        display:inline-block;
-        
-    }
-    .logo {
-        width:50%;
-        padding:1%;
-        grid-area:logo;
-      
-    }
-    
-    
-    .inline-block li{
-        font-size: 17px;
-        list-style:none;
-    
-    }
-    
-    .inline-block li a {
-        
-        color:black;
-        padding:16px;
-        font-family: 'Hind Madurai', sans-serif;
-        font-weight: 600;
-        font-size: 22px;
-    }
-    
-    ul .contact, .work, .about {
-        background-color: #D1A6A6;
-        border:3px solid #546A7B;
-        border-radius: 7px;
-        border-width: 3px;
-        font-family: 'Hind Madurai',sans-serif;
-        font-weight:600;
-        font-size: 25px; 
-        text-transform: uppercase;
-        padding:0px 20px 0px 20px; 
-        margin-bottom:10px;
-    }
-    /*NEED HELP REACHING THIS CONTACT*/
-    
-    
-    .header-color {
-        background-color:#F3EAE3;
-        border:none; 
-    }
-    
-    .pfp2 {
-        display:block;
-        background-color:#F3EAE3;
-        margin-left:50px;
-        grid-area: photo;
-        visibility:visible;
-    }
-
-    /* .header{
-        display:flex;
-    } */
-    .hero-left{ 
-        grid-area:hero-left;
-        padding:25px;
-    }
-    .header{
-        display:grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "hero-left"
-        "pfp";
-    }
-
-    .pfp {
-        grid-area: pfp;
-    
-    }
-
-    /* .hero-left{ 
-        grid-area:name;
-    }
-
-    */
-    .arrow {
-        grid-area:arrow;
-        position:absolute;
-        z-index: 0;
-        padding-top: 0px;
-        padding-left:50px; 
-    }
-   
-    #about-me {
-        padding:40px 50px 50px 50px;
-        margin-left:200px;
-        margin-right: 200px;
-        
-    }
-    .white {
-        background-color: white;
-    }
-    
-    .skillsSection {
-        display:flex;
-        background-color: white;
-    
-    }
-    .skillsLeft {
-        display: inline-block;
-        padding-left:40px;
-        width:60%;
-    }
-    
-    .skillsRight {
-        width:30%;
-        padding:50px;
-        margin-right:60px;
-        background-color: #F3EAE3;
-    }
-    /*RESUME BUTTON*/
-    .resume  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:60px 0px 80px 0px;
-    }
-    
-    .resume button{
-        
-        background-color: #D1A6A6;
-        border-color:#546A7B;
-        border-radius: 7px;
-        border-width: 3px;
-        font-family: 'Hind Madurai',sans-serif;
-        font-weight:600;
-        font-size: 25px; 
-        padding:10px 30px 10px 30px; 
-    }
-    
-    .resume img {
-        width:15%;
-        margin-left:10px;
-        margin-top:px;
-    
-    }
-    /*RESUME BUTTON*/
-    
-    .myWork{
-        background-color:#F5E7E7;
-        padding-bottom:140px;
-        padding-top:40px;
-    }
-    
-    .myWork h2 {
-        text-align: center;
-    }
-    
-    .myWork button {
-        border:none;
-        font-family: 'Hind Madurai',sans-serif;
-        font-weight:600;
-        font-size: 25px;
-        text-transform: uppercase;
-        background-color:  #F3EAE3;
-    }
-    .wrapper {
-        display:grid;
-        grid-template-rows: 500px 500px 500px;
-        grid-template-areas: "p1"
-        "p2"
-        "p3";
-    
-    }
-    .projectOne {
-        grid-area:p1;
-        display: flex;
-        border-style:solid;
-        border-color:#546A7B;
-        background-color: #F3EAE3;
-        margin:40px 50px 50px 50px;
-    }
-    
-    
-    .projectTwo {
-        grid-area:p2;
-        display: flex;
-        border-style:solid;
-        border-color:#546A7B;
-        background-color: #F3EAE3;
-        margin:10px 20px 50px 20px;
-    }
-    
-    .projectThree {
-            grid-area:p3;
-            display: flex;
-            border-style:solid;
-            border-color:#546A7B;
-            background-color: #F3EAE3;
-            margin:10px 20px 50px 20px;
-        
-    }
-    #footer {
-        background-color: #FFFFFF;
-        text-align:center;
-        padding:60px;
-        padding-top:100px;
-        padding-bottom:100px;
-    
-    }
-    
-    .footer-logo img {
-        width:20%;
-        margin-top: 50px;
-    }
-    
-    .footer-text {
-        color:#0D1F2D;
-    }
-    
-    .copy
-    
-    /* .footer ul {
-        display:inline-block;
-        /* vertical-align:top; 
-        padding-left: 100px;
-    }
-    */ 
-    .footer li {
-        padding:1px;
-    }
-    
-    .copyright{
-        align-items:baseline;
-    }
-    #SMicons img {
-       width:5%; 
-    }
-}
